@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-  body {
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
 }
@@ -39,48 +39,37 @@ button {
 button:hover {
   opacity: 0.8;
 }
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
 
 .container {
   padding: 16px;
 }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
 </style>
 </head>
-<body><center>
-<h2>Login</h2>
-<form action="authentication.php" method="post">
+<body>
+<center>
+<h2>Sign Up</h2>
+<form action="signup.php" method="post">
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your name" name="name" required><br>
+    <label for="uname"><b>Create Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required><br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter your email" name="email" required><br>
+    <label for="mobile"><b>Mobile Number</b></label>
+    <input type="text" placeholder="Enter your mobile number" name="mobile" required><br>
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter your address" name="address" required><br>
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required><br>
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <center><button type="submit">Sign Up</button></center>
   </div>
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Dont have Account<a href="signup.html">SignUp</a></span>
+    <span class="psw">Already have an account<a href="login.html">Login</a></span>
   </div>
-</form></center>
+</form>
+</center>
 </body>
 </html>
